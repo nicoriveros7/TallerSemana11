@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TV SERIES</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>TV SERIES</h1>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2sta9BiG0bJwIQmbiN0AH88cvEDxslzGy5g&usqp=CAU" alt="Series">
+                    <h2>Series</h2>
+                    <form style="margin:10px;">
+                        <div class="form-row">
+                          <div class="col">
+                              <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre">
+                          </div>
+                          <div class="col">
+                              <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
+                          </div>
+                        </div>
+                    </form>
+                    <table>
+                        <table class="table">
+                            <thead class="thead-dark">
+                               <tr>
+                                  <th>#</th>
+                                  <th>Name</th>
+                                  <th>Chanel</th>
+                                  <th>Seasons</th>
+                               </tr>
+                            </thead>
+                            <tbody id="series">
+                            </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <strong class= "row"></strong> Card: </strong></h5>
+                        <div class="card" style="width: 18rem;">
+                            <img id="serie-image" class="card-img-top" src="" alt="Serie Image">
+                            <div class="card-body">
+                                <h5 id="serie-title" class="card-title"></h5>
+                                <p id="serie-description" class="card-text"></p>
+                                <a id="serie-url" href="#" target="_blank">Mas informacion</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <h5><strong>Seasons Average -></strong></h5>
+                <h5 id ="seasons-average"><strong></strong></h5>
+            </div>
+        </div>
+        <script type="module" src="./scripts/serie.js" ></script>
+        <script type="module" src="./scripts/dataSeries.js" ></script>
+        <script type="module" src="./scripts/main.js"></script>
+    </body>
+</html>
